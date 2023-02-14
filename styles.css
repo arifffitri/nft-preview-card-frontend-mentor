@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif; */
+
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-dark-blue: hsl(217, 54%, 11%);
+    --card-dark-blue: hsl(216, 50%, 16%);
+    --line-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* ensure images dont overflow in the container */
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: var(--main-dark-blue);
+    /* organize the container (div) by column */    
+    display: flex;
+    flex-direction: column;
+    /* push the container to the center */
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    margin: 1.25rem;
+}
+
+.container{
+    background-color: var(--card-dark-blue);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.nft{
+    width: 415px;
+    height: 400px;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.container h1{
+    font-size: 1.75rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    text-align: left;
+    margin: 1rem 1rem;
+}
+
+.container h1:hover{
+    color: var(--soft-blue);
+}
+
+.description{
+    font-size: 1.58rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    color: var(--soft-blue);
+    text-align: left;
+    margin: 1rem 1rem;
+}
+
+.price-and-time {
+    font-size: 1.35rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--soft-blue);
+    text-align: center;
+    margin: 2rem 1rem;
+
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.eth{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.eth img{
+    width: 15px;
+}
+
+.clock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock img{
+    width: 1.5rem;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--line-dark-blue);
+    border: none;
+}
+
+.credit{
+    font-size: 1.35rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: var(--soft-blue);
+    text-align: center;
+    margin: 0.5rem 1rem;
+
+    display: flex;
+    align-items: center;
+	justify-content: flex-start;
+}
+
+.credit .avatar{
+    margin: 1rem 0;
+    margin-right: 1rem;
+    width: 40px;
+    
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 2rem;
+}
+
+.credit span{
+    color: var(--white);
+    margin: 0rem 0.25rem;
+}
+
+.credit span:hover{
+    color: var(--soft-blue);
+}
+
+@media (min-width: 500px) {
+    .container{
+        width: 445px;
+        height: 755px;
+    }
+}
